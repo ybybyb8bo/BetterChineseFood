@@ -1,0 +1,30 @@
+Goals:
+1:
+    create extensions to the current animal meat, adding distinctive parts of animal meat into the Game
+        -pork belly
+2:
+    Add other chinese ingredients such as five spice powder, Doubanjiang, Oyster sauce or chilli oil into the game
+        -douban sauce
+        -TianMian Sauce
+        -DouChi
+3:
+    create chinese food recipe for the new and existing ingredients
+        -大众川菜(Sichuanese cusine for everyone)
+4:
+    Allow these chinese food to grant player short and long term perks such as
+        -speed buff
+        -temperature buff
+        -night vision
+        -healling
+        -attack speed buff
+        -exp on fitness and strength
+5:
+    Allow cooking to be done as a recipe instead of just leave food in heat source
+    -done
+
+
+Current progress:
+-completed pork belly and huiguorou
+-completed heat source detection
+    Need to add 焯水step to cooking,
+    Need to be able to split the sauces into portions.

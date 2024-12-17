@@ -1,0 +1,56 @@
+module BetterChineseFood
+{
+
+	imports
+	{
+		Base,
+	}
+
+
+    recipe Make HuiGuoRou
+	{	
+		keep Spatula/[Recipe.GetItemTypes.Spoon]/[Recipe.GetItemTypes.Fork],
+        destroy Pan,
+		SlicedPorkBelly=5,
+		
+		Soysauce;1,
+		DouBanSauce;1,
+		GarlicShoots,
+		DouChi,
+		GingerRoot,
+		SpringOnion,
+		[Recipe.GetItemTypes.Sugar];1,
+
+
+
+        OnTest:Recipe.OnCanPerform.IsNearValidCookingUtility,
+		Result 		: HuiGuoRou,
+		Time 		: 150.0,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.Cooking20,
+		Sound 		: AddItemInRecipe,
+		SkillRequired 		: Cooking=3,
+		Category 		: BetterChineseFood,
+	}
+
+    
+    recipe CutPorkBelly
+	{
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        PorkBelly,
+		Result 		: SlicedPorkBelly=10,
+		Time 		: 120.0,
+		Category 		: Cooking,
+		OnGiveXP 		: Recipe.OnGiveXP.Cooking3,
+		Sound 		: SliceMeat,
+		Category 		: BetterChineseFood,
+	}
+
+	
+
+
+
+
+
+
+}

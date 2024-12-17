@@ -1,0 +1,22 @@
+module BetterChineseFood
+{
+	imports
+	{
+		Base,
+	}
+	item AsianFoodMagazine
+	{
+		Weight = 0.1,
+		Type = Literature,
+		DisplayName = Foods around the World Vol.1,
+		Icon = MagazineVol1Icon,
+		TeachedRecipes = HuiGuoRou;CutPorkBelly,
+		StaticModel = H_AsianMag,
+		ReplaceOnUse    =   AsianFoodMagazine,
+		WorldStaticModel = AsianMag_Ground,
+		Tooltip             = Tooltip_AsiaFoodMagazine,
+		DisplayCategory = SkillBook,
+	}
+	
+
+}

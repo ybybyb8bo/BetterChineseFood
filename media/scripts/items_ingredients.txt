@@ -1,0 +1,185 @@
+module BetterChineseFood
+{	
+	imports
+	{
+		Base
+	}
+	item PorkBelly
+	{
+		DisplayName = Pork Belly,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.4,
+		Icon = PorkBellyIcon,
+		BadCold = true,
+		BadInMicrowave = true,
+		DangerousUncooked = TRUE,
+		EvolvedRecipe = Soup:15;Stew:15;Pie:15;Stir fry Griddle Pan:15;Stir fry:15;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Burger:10|Cooked;Salad:10|Cooked;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15,
+		FoodType = Meat,
+		GoodHot = true,
+		IsCookable = TRUE,
+		MinutesToCook = 50,
+		MinutesToBurn = 70,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -40,
+		Calories = 300,
+		Carbohydrates = 0,
+		Lipids = 10,
+		Proteins = 20,
+		StaticModel = PorkBelly_Ground,
+		WorldStaticModel = PorkBelly_Ground,
+		EvolvedRecipeName = Pork,
+	}
+
+	item SlicedPorkBelly
+	{
+		DisplayName = Sliced Pork Belly,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.04,
+		Icon = PorkBellySliceIcon,
+		BadCold = true,
+		BadInMicrowave = true,
+		DangerousUncooked = TRUE,
+		EvolvedRecipe = Pizza:4;Stew:4;Stir fry Griddle Pan:4;Stir fry:4;Sandwich:4;Sandwich Baguette:4;Roasted Vegetables:4;PastaPot:4;PastaPan:4;RicePot:4;RicePan:4,a
+		FoodType = Meat,
+		GoodHot = true,
+		IsCookable = TRUE,
+		MinutesToCook = 5,
+		MinutesToBurn = 10,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -4,
+		Calories = 30,
+		Carbohydrates = 0,
+		Lipids = 1,
+		Proteins = 2,
+	}
+
+	item DouBanSauce
+	{
+		DisplayName = Douban Sauce,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = DoubanSauceIcon,
+		CantBeFrozen = TRUE,
+		EvolvedRecipe = Pizza:4;Omelette:2;Sandwich:2;Sandwich Baguette:2;Burger:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2;Taco:2;Burrito:2;Beverage:1;Beverage2:1;Stir fry:4;Stir fry Griddle Pan:4;Beer:1;Beer2:1,
+		HungerChange = -16,
+		UnhappyChange = 20,
+		Calories = 430,
+		Carbohydrates = 270,
+		Lipids = 3,
+		Proteins = 1,
+		FoodType = NoExplicit,
+		Spice = true,
+		Packaged = TRUE,
+	}
+
+	item HuiGuoRou
+	{
+		DisplayCategory = Food,
+		Weight 		= 1,
+		Type 		= Food,
+		DisplayName 		= Hui Guo Rou,
+		Icon 		= HuiGuoRouIcon,
+		Carbohydrates 		= 10,
+		Proteins 		= 25,
+		Lipids 		= 40,
+		Calories 		= 340,
+		ReplaceOnUse 		= Saucepan,
+		DangerousUncooked 		= TRUE,
+		IsCookable	=	TRUE,
+		MinutesToCook	=	60,
+		MinutesToBurn	=	90,
+		DaysFresh 		= 3,
+		DaysTotallyRotten 		= 6,
+		HungerChange 		= -66,
+		CookingSound 		= BoilingFood,
+		EatType 		= 2hand,
+		Tags = returnSaucepan,
+		
+	}
+
+	item GarlicShoots
+	{
+		DisplayName = Garlic Shoots,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = GarlicShootsIcon,
+		EvolvedRecipe = Omelette:6;Soup:12;Stew:12;Pie:12;Stir fry Griddle Pan:12;Stir fry:12;Salad:6;Roasted Vegetables:12;RicePot:12;RicePan:12;PastaPot:12;PastaPan:12,
+		FoodType = Vegetables,
+		DaysFresh = 5,
+		DaysTotallyRotten = 8,
+		HungerChange = -12,
+		ThirstChange = -5,
+		Calories = 54,
+		Carbohydrates = 12.59,
+		Lipids = 0.27,
+		Proteins = 1.34,
+		StaticModel = CylinderFood_Green,
+	}
+
+	item DouChi
+	{
+		DisplayName = DouChi,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = DouChiIcon,
+		CantBeFrozen = TRUE,
+		EvolvedRecipe = Pizza:4;Omelette:2;Sandwich:2;Sandwich Baguette:2;Burger:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2;Taco:2;Burrito:2,
+		Spice = true,
+		HungerChange = -15,
+		UnhappyChange = 5,
+		Calories = 430,
+		Carbohydrates = 270,
+		Lipids = 3,
+		Proteins = 1,
+		FoodType = NoExplicit,
+	}
+
+
+	item SpringOnion
+	{
+		DisplayName = Spring Onion,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = SpringOnionIcon,
+		EvolvedRecipe = Omelette:6;Soup:12;Stew:12;Pie:12;Stir fry Griddle Pan:12;Stir fry:12;Salad:6;Roasted Vegetables:12;RicePot:12;RicePan:12;PastaPot:12;PastaPan:12,
+		FoodType = Vegetables,
+		DaysFresh = 5,
+		DaysTotallyRotten = 8,
+		HungerChange = -10,
+		ThirstChange = -5,
+		Calories = 30,
+		Carbohydrates = 13,
+		Lipids = 0,
+		Proteins = 1,
+		StaticModel = CylinderFood_Green,
+	}
+
+	item TianMianSauce
+	{
+		DisplayName = TianMian Sauce,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = TianMianSauceIcon,
+		CantBeFrozen = TRUE,
+		EvolvedRecipe = Pizza:4;Omelette:2;Sandwich:2;Sandwich Baguette:2;Burger:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2;Taco:2;Burrito:2;Beverage:1;Beverage2:1;Stir fry:4;Stir fry Griddle Pan:4;Beer:1;Beer2:1,
+		Spice = true,
+		HungerChange = -12,
+		UnhappyChange = 15,
+		Calories = 300,
+		Carbohydrates = 270,
+		Lipids = 3,
+		Proteins = 1,
+		FoodType = NoExplicit,
+	}
+
+
+}
